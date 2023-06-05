@@ -6,7 +6,8 @@ import Contact from "./components/Contact";
 import Event from "./components/Event";
 import Home from "./components/Home";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import { ListProduct, ProductDetail } from "./components/UI/products";
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
         <Route path="/category" element={<Category />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/events" element={<Event />} />
+        <Route path="/products" element={<ListProduct />} />
+        <Route path="/product/:id" element={<ProductDetail />} />
       </Routes>
       <footer className="relative bg-white pt-8 pb-6 ">
         <Footer />

@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { getProducts } from "../apiService/productApi";
 
 const Category = () => {
-  return <div>Category</div>;
+  useEffect(() => {
+    const fetchProduct = async () => {
+      const result = await getProducts();
+    };
+    fetchProduct();
+  }, []);
+  return <div>category</div>;
 };
 
 export default Category;

@@ -54,6 +54,12 @@ export const ListMenu = [
     type: "menu",
   },
   {
+    name: "Products",
+    icon: "",
+    link: "/products",
+    type: "menu",
+  },
+  {
     name: "Blogs",
     icon: "",
     link: "/blogs",
